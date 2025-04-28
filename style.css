@@ -1,0 +1,273 @@
+        :root {
+            --primary: #ea580b;
+            --dark: #0b3c4a;
+            --light: #71c9cd;
+            --accent: #93c788;
+            --gray: #f5f5f5;
+            --black: #333333;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--gray);
+            color: var(--black);
+            line-height: 1.6;
+        }
+        
+        .newsletter-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: var(--white);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--dark), var(--light));
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .banner {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .section {
+            padding: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section-title {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+        
+        .ceo-message {
+            background-color: var(--gray);
+        }
+        
+        .ceo-message .author {
+            font-weight: bold;
+            color: var(--dark);
+            margin-top: 15px;
+        }
+        
+        .blog-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .blog-image {
+            flex: 1;
+            min-width: 250px;
+            background-color: var(--light);
+            height: 200px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            font-weight: bold;
+        }
+        
+        .blog-content {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .blog-content h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .blog-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .blog-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary);
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .blog-content a:hover {
+            text-decoration: underline;
+        }
+        
+        .updates-list {
+            list-style-type: none;
+        }
+        
+        .updates-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            align-items: center;
+        }
+        
+        .updates-list li:before {
+            content: "•";
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark);
+            color: var(--white);
+        }
+        
+        /* CMS Editor Styles */
+        .cms-editor {
+            display: none;
+            background-color: var(--gray);
+            padding: 20px;
+            border-top: 2px solid var(--primary);
+        }
+        
+        .cms-control-group {
+            margin-bottom: 15px;
+        }
+        
+        .cms-control-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        .cms-control-group input,
+        .cms-control-group textarea,
+        .cms-control-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .cms-control-group textarea {
+            min-height: 100px;
+        }
+        
+        .cms-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .cms-button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .cms-save {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .cms-cancel {
+            background-color: #ddd;
+        }
+        
+        .edit-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-section {
+                flex-direction: column;
+            }
+            
+            .blog-image {
+                width: 100%;
+            }
+        }

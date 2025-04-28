@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSIGHT+ Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="newsletter-container" id="newsletter">
+        <div class="header">
+            <h1>ENSIGHT+</h1>
+            <p>Smart. Versatile. Efficient.</p>
+        </div>
+        
+        <div class="banner" id="monthly-banner">
+            Monthly Newsletter - Issue #<span id="issue-number">1</span>
+        </div>
+        
+        <div class="section ceo-message">
+            <h2 class="section-title">Message from our CEO</h2>
+            <div id="ceo-message-content">
+                <p>Welcome to our monthly newsletter! This month has been full of exciting developments and achievements. We're proud to share our progress with you and look forward to what's coming next.</p>
+                <p>Our team has been working hard to deliver innovative solutions, and we're excited about the opportunities ahead. Thank you for being part of our journey.</p>
+                <p class="author">- Josh, CEO</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Monthly Blog</h2>
+            <div class="blog-section">
+                <div class="blog-image" id="blog-image">
+                    Featured Image
+                </div>
+                <div class="blog-content">
+                    <h3 id="blog-title">This Month's Featured Blog Post</h3>
+                    <p id="blog-body">Our latest blog post explores the latest trends in our industry and how we're adapting to meet new challenges. We discuss innovative approaches and share insights from our team.</p>
+                    <ul id="blog-bullets">
+                        <li>Key trend #1 explained</li>
+                        <li>How we're responding to changes</li>
+                        <li>Upcoming opportunities</li>
+                    </ul>
+                    <a href="#" id="blog-link">Read the full post on our blog →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Follow us on social media!</h2>
+            <div class="social-media">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">in</a>
+                <a href="#" class="social-icon">t</a>
+                <a href="#" class="social-icon">ig</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">ENSIGHT+ UPDATES</h2>
+            <ul class="updates-list" id="updates-list">
+                <li>Update #1: New product launch</li>
+                <li>Update #2: Team expansion</li>
+                <li>Update #3: Upcoming events</li>
+                <li>Update #4: Customer success story</li>
+                <li>Update #5: Industry recognition</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question">Q: How often is the newsletter published?</div>
+                <p>A: The newsletter is published monthly, with special editions for important announcements.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: How can I contribute to the newsletter?</div>
+                <p>A: We welcome contributions from all team members. Please contact the marketing team with your ideas.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 ENSIGHT+. All rights reserved.</p>
+            <p>Englishplus.com</p>
+        </div>
+    </div>
+    
+    <!-- CMS Editor -->
+    <div class="cms-editor" id="cms-editor">
+        <h2>Newsletter Editor</h2>
+        
+        <div class="cms-control-group">
+            <label for="edit-issue-number">Issue Number:</label>
+            <input type="number" id="edit-issue-number" min="1">
+        </div>
+        
+        <div class="cms-control-group">
+            <label for="edit-banner-text">Banner Text:</label>
+            <input type="text" id="edit-banner-text">
+        </div>
+        
+        <div class="cms-control-group">
+            <label for="edit-ceo-message">CEO Message:</label>
+            <textarea id="edit-ceo-message"></textarea>
+        </div>
+        
+        <div class="cms-control-group">
+            <label for="edit-blog-title">Blog Title:</label>
+            <input type="text" id="edit-blog-title">
+        </div>
+        
+        <div class="cms-control-group">
+            <label for="edit-blog-body">Blog Body:</label>
+            <textarea id="edit-blog-body"></textarea>
+        </div>
+        
+        <div class="cms-control-group">
+            <label for="edit-blog-bullets">Blog Bullets (one per line):</label>
+            <textarea id="edit-blog-bullets"></textarea>
+        </div>
+        
+        <div class="cms-control-group">
+            <label for="edit-blog-link">Blog Link:</label>
+            <input type="text" id="edit-blog-link">
+        </div>
+        
+        <div class="cms-control-group">
+            <label for="edit-updates">Updates (one per line):</label>
+            <textarea id="edit-updates"></textarea>
+        </div>
+        
+        <div class="cms-buttons">
+            <button class="cms-button cms-save" id="save-changes">Save Changes</button>
+            <button class="cms-button cms-cancel" id="cancel-changes">Cancel</button>
+        </div>
+    </div>
+    
+    <button class="edit-toggle" id="toggle-editor">✏️</button>
+    
+   <script src="/script.js"></script>
+</body>
+</html>
